@@ -36,3 +36,5 @@ Implement APIs: To handle CRUD (Create, Read, Update, Delete) actions on the dat
 
 Create the front-end user interface by utilizing React for your educational system. Create and build the elements that will be used to present classes, tests, and other educational materials. Create user interfaces for managing user accounts and registering new users. Connect to the back-end APIs to retrieve and show database data.
 
+
+Figma Link :-https://www.figma.com/file/OVw9GXPl0C0RLpBXzGQa97/Untitled?node-id=0%3A1&t=i6VC7RYt71mwASfR-1 
