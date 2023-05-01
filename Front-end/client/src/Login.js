@@ -1,37 +1,42 @@
 
-import React, { Component } from 'react';
-import axios from 'axios';
+import { Button, Grid, TextField, Typography,ButtonGroup } from "@mui/material";
+import React from "react";
+import logo from "./assets/logo.png"
+import Footer from "./Footer";
 
-export default class App extends Component{
-    constructor(props){
-        super(props);
+const LoginForm = () => {
+
+  return (
+
+    
+    <Grid
+      display="flex"
+      direction="column"
+      justifyContent="center"
+      alignItems="center"
+    >
+      
+    
+      
+      <img src={logo}alt="logo"/>
+      
+      <Typography><h1>Login</h1></Typography>
+      <TextField id="standard-basic" label="Email" variant="standard" />
+      <TextField id="standard-basic" label="Password" variant="standard" />
+      <ButtonGroup variant="text" aria-label="text button group">
         
-        this.state = {
-            posts:[]
-        };
-}
+        <Button>LOGIN</Button>
+        
+      </ButtonGroup>
+      <h3>don’t have an account yet?</h3>
+      <a href="/StudentSignUP">Create an Account</a>
+      
+      <Footer></Footer>
+    </Grid>
 
-compoentDidMount(){
-    this.retrievePosts();
-}
+    
+  );
+};
 
-retrievePosts(){
-    axios.get("http://localhost:8000/posts").then(res =>{
-        if(res.data.success){
-            this.setState({
-                posts:res.data.existingPosts
-            });
-
-            console.log(this.state.posts)
-        }
-
-    });
-}
-render() {
-    return (
-      <div>T E C H L A N K A  </div>
-    )
-  }
-}
-
+export default LoginForm;
 
